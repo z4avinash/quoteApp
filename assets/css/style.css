@@ -1,0 +1,37 @@
+label {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#author,
+#quote {
+	padding: 10px;
+	font-size: 15px;
+	border: 1px solid black;
+	border-radius: 10px;
+	outline: none;
+}
+
+#submit,
+#cancel {
+	padding: 10px;
+	background-color: rgb(0, 174, 255);
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 3px 5px 5px #333333;
+}
+
+#cancel {
+	background-color: red;
+}
+
+/* #submit,
+#cancel:active {
+	transform: translateY(1px);
+	box-shadow: 0 1px 1px 1px #333333;
+} */
