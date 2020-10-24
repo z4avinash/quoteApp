@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotes | View</title>
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/viewQuote.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/assets/css/viewQuote.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     if (!empty('quotes')) {
         foreach ($quotes as $quote) {
             echo "<div class='quote-view' >
-             <span class='quote-id'>{$quote['quote_id']}. </span><br><br>
+             <span class='quote-id'>Q-ID: {$quote['quote_id']} </span><br><br>
              <span class='quote-body'>\"{$quote['quote_body']}\"</span><br>
               <span class='quote-author'> -{$quote['quote_author']}</span><br>
                 Posted at: {$quote['created_at']}<br><br>

@@ -3,7 +3,7 @@ class User extends CI_Controller
 {
 
     //to show the list of quotes
-    public function index()
+    function index()
     {
         $this->load->model('User_model');
         $quotes = $this->User_model->all();
@@ -13,7 +13,7 @@ class User extends CI_Controller
     }
 
     //to create a qutoe
-    public function create()
+    function create()
     {
         $this->load->model('User_model');
         $this->form_validation->set_rules('quote', 'Quote', 'required');
@@ -35,7 +35,7 @@ class User extends CI_Controller
     }
 
     //edit a quote
-    public function edit($quoteId)
+    function edit($quoteId)
     {
         $this->load->model('User_model');
         $quote = $this->User_model->getQuote($quoteId);
@@ -56,5 +56,25 @@ class User extends CI_Controller
             $this->session->set_flashdata('success', 'Quote updated successfully');
             redirect(base_url() . 'index.php/User/index');
         }
+    }
+
+
+    //delete a qutoe
+    function delete($quoteId)
+    {
+        $this->load->model('User_model');
+        $quote = $this->User_model->getQuote($quoteId);
+
+        //if empty
+        if (empty($quote)) {
+            $this->session->set_flashdata('failure', 'Quote not found in database.');
+            redirect(base_url() . 'index.php/User/index');
+        }
+
+
+        //to delete
+        $this->User_model->deleteQuote($quoteId);
+        $this->session->set_flashdata('success', 'Quote deleted successfully.');
+        redirect(base_url() . 'index.php/User/index');
     }
 }

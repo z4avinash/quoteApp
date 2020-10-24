@@ -22,4 +22,10 @@ class User_model extends CI_model
         $this->db->where('quote_id', $quoteId);
         $this->db->update('quotes', $formArray);
     }
+
+    function deleteQuote($quoteId)
+    {
+        $this->db->where('quote_id', $quoteId);
+        $this->db->delete('quotes');
+    }
 }

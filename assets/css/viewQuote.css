@@ -23,7 +23,7 @@
 .quote-id {
 	font-size: 15px;
 	font-weight: 700;
-	border-radius: 55%;
+	border-radius: 5px;
 	border: 1px solid white;
 	padding: 0.1rem 0.3rem;
 }
