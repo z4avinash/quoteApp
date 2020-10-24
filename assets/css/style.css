@@ -43,3 +43,7 @@ label {
 	background-color: red;
 	width: 30.5rem;
 }
+
+.error {
+	color: red;
+}

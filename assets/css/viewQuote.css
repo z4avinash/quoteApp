@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Mali:ital,wght@1,300&family=Quicksand:wght@500&display=swap");
+
+.add-quote {
+	padding: 20px;
+	color: white;
+	background-color: rgb(2, 91, 143);
+	outline: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.quote-view {
+	font-size: 10px;
+	background-color: rgb(5, 28, 37);
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	display: inline-block;
+}
+.quote-id {
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 55%;
+	border: 1px solid white;
+	padding: 0.1rem 0.3rem;
+}
+
+.quote-body {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50rem;
+	font-size: 18px;
+	font-family: "Mali", cursive;
+}
+
+.quote-author {
+	font-size: 20px;
+	font-family: "Caveat", cursive;
+}
+
+.edit,
+.del {
+	padding: 10px;
+	color: white;
+	background-color: red;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 700;
+}
+.edit {
+	background-color: rgb(12, 172, 124);
+}
