@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD | Edit Quotes</title>
+    <title>Quotes | Edit Quotes</title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
 </head>
 
@@ -13,7 +13,7 @@
     <h1>Add Quotes</h1>
     <hr><br><br>
     <div class="container">
-        <form method="post" name="createUser" action="<?php echo base_url() . 'index.php/User/' ?>">
+        <form method="post" name="createUser" action="<?php echo base_url() . 'index.php/User/edit/' . $quote['quote_id'] ?>">
             <div class="quote-body">
                 <textarea type="text" rows="5" cols="50" name="quote" id="quote" placeholder="write your quote here!"><?php echo set_value('quote', $quote['quote_body']); ?></textarea>
                 <div class="error"><?php echo form_error('quote'); ?></div>
